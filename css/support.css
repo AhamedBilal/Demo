@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* Copyright © 2015 Design Future.com - All Rights Reserved */
+@media screen and (min-width: 768px) {
+.wapper {
+	width: 750px;
+}
+}
+@media screen and (min-width: 992px) {
+.wapper {
+	width: 970px;
+}
+}
+@media screen and (min-width: 1200px) {
+.wapper {
+	width: 1170px;
+}
+}
+@media screen and (max-width: 760px) {
+.visible {
+	visibility: hidden;
+	left: -10000;
+	position:absolute;
+}
+.hide {
+	visibility: visible;
+	left: 0;
+	position: relative;
+}
+.logo {
+	position: absolute;
+}
+.footer-flot {
+	float: none;
+}
+.social {
+	float: none;
+}
+}
+@media screen and (max-width: 600px) {
+.welcom-box-right {
+	float: left;
+	background-image: none;
+	margin-left: 0px;
+	padding: 10px 0px 0px 5px;
+	overflow: hidden;
+	font-size: 95%;
+}
+.gallery-link-ul {
+	padding-left: 0px;
+	width: 100%;
+}
+.welcome-h1 {
+	font-size: 300%;
+}
+.photo-box-right {
+	float: left;
+	clear: both;
+	background-image: none;
+	padding: 0px 0px 20px 0px;
+	margin: 0px;
+}
+.gallery-box-righ {
+	float: left;
+	clear: both;
+	background-image: none;
+	padding: 0px 0px 20px 0px;
+	margin: 0px;
+}
+}
+@media screen and (max-width: 320px) {
+.welcom-box-right {
+	font-size: 80%;
+}
+.footer-flot {
+	float: none;
+}
+.social {
+	float: none;
+}
+.social-box {
+	width: 16%;
+}
+}

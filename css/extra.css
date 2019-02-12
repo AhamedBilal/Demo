@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* Copyright © Design Future.com - All Rights Reserved */
+/*--------------------Loading the Page-------------------*/
+.spinner {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/style/spinner.gif) 50% 50% no-repeat #FFF;
+}
+.preloader {
+  background: url(../img/style/loader.gif) center center no-repeat;
+}
+
+/*--------------------Photo viewer-------------------*/
+.magnifier {
+	opacity: 1;
+	display:block;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	border: solid 4px #e85356;
+}
+.magnifier:hover {
+  opacity: 0.7;
+  border: solid 4px #FFF;
+}
+.magnifier:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  background: url('../img/style/magnifier.png') center center no-repeat #e85356;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.magnifier:hover:after {
+  opacity: 0.6;
+}
+/*--------------------Back to Top-------------------*/
+.cd-top {
+	height: 60px;
+	width: 60px;
+	border-radius: 40px;
+	border: solid 2px #e85356;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 40px;
+	right: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	/* image replacement properties */
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background: transparent url(../img/style/top.png) no-repeat center 50%;
+	visibility: hidden;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.3s linear 0s, visibility 0s linear 0.3s;
+	-moz-transition: opacity 0.3s linear 0s, visibility 0s linear 0.3s;
+	transition: opacity 0.3s linear 0s, visibility 0s linear 0.3s;
+	-ms-transition: opacity 0.3s linear 0s, visibility 0s linear 0.3s;
+	-o-transition: opacity 0.3s linear 0s, visibility 0s linear 0.3s;
+}
+.cd-top:hover {
+	border: solid 2px #FFF;
+	-webkit-border: solid 2px #FFF;
+	-moz-border: solid 2px #FFF;
+	background: #e85356 url(../img/style/top2.png) no-repeat center 50%;	
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch  {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  opacity: .5;
+}
+.no-touch {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 8px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    right: 10px;
+    bottom: 30px;
+  }
+}
+/*--------------------Others-------------------*/
+#welcome {
+	margin: 10px 0px 20px 0px;
+	padding: 0px 0px;
+	overflow: hidden;
+}
+#welcome h1 {
+	color: #333;
+	font-size: 4em;
+	float: left;
+	padding: 0px 20px 0px 0px;
+	margin: 10px 0px 0px 0px;
+}
+#welcome h1 span {
+	color: #e85356;
+}
+#welcome p {
+	display: block;
+	color: #555;
+	padding: 0px 0px 0px 0px;
+	float: left;
+}
+@media screen and (min-width: 768px) {
+#welcome p {
+	float: inherit;
+	overflow: hidden;
+	background-image: url(../img/style/line1.png);
+	background-position: left;
+	background-repeat: repeat-y;
+	padding: 0px 0px 0px 20px;
+}
+#welcome h1 {
+	margin: 0px;
+}
+.wap4 {
+	float: inherit;
+	margin: 0px;
+	overflow: hidden;
+}
+.forum-info {
+	float: left;
+	padding: 0px 30px 0px 0px;
+    max-width: 400px;
+	min-width: 1px;
+}
+}
+#headline {
+	margin: 5px 0px 30px 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#headline h1 {
+	color: #333;
+	font-size: 3.5em;
+	padding: 0px;
+	margin: 10px 0px 0px 0px;
+}
+#headline h1 span {
+	color: #e85356;
+}
+.forum-info {
+	width: 100%;
+}
+.forum-info p {
+	color: #444;
+	margin: 0px;
+}
+.forum-info ul {
+	list-style: none;
+	padding: 0px 0px 0px 0px;
+}
+.forum-info li {
+	padding-bottom: 10px;
+	color: #555;
+	
+}
+.forum-info li img {
+	border: solid 4px #aaa;
+	border-radius: 100px;
+	margin-right: 20px;
+	
+}
+.forum-info li a {
+	color: #555;
+}
+.forum-info li a:hover {
+	text-decoration: none;
+	color: #333;
+}
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}

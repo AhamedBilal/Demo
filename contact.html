@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>MYSelfio | Contact</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="icon" href="img/style/icon.png" /> 
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="css/kwicks-slider.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="css/touchTouch.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="css/CollapsiblePanel.css" rel="stylesheet" type="text/css" media="screen"> 
+  <link rel="stylesheet" href="css/extra.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/support.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+  
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="js/CollapsiblePanel.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>	  
+  <script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+  <script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');p=val.indexOf('.');
+          if (p<1 || p==(val.length-1)) errors+='Your '+nm+' is not an e-mail address Do not try to Play With Me :( .\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='Your '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+      } } } else if (test.charAt(0) == 'R') errors += 'Your Full '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+  </script>
+  
+  </head>
+
+  <body>
+  <div class="spinner"></div>
+<!--------------------------Header Goes Here------------------------------->
+    <header>
+    <div class="nav-bg">
+      <div class="wapper"> 
+      <h1  class="logo">
+       <a href="index.html"><img src="img/style/logo.png" alt="logo"></a>
+      </h1> 
+      <nav class="visible">
+        <ul id="nav-ul-il" class="nav-ul">
+          <li class="nav-li"><a href="index.html" class="nav-link-active">HOME</a></li>
+          <li class="nav-li"><a href="gallery.html" class="nav-link">GALLERY</a></li>
+          <li class="nav-li"><a href="best.html" class="nav-link">BEST</a></li>
+          <li class="nav-li"><a href="news.html" class="nav-link">NEWS</a></li>
+          <li class="nav-li"><a href="upload.html" class="nav-link">UPLOAD</a></li>
+          <li class="nav-li"><a href="about.html" class="nav-link">ABOUT</a></li>
+          <li class="nav-li"><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+      </div>
+      <!-----------------Mobile Menu------------------->
+        <div id="mobile-menu" class="CollapsiblePanel hide">
+  <div class="CollapsiblePanelTab"><span class="icon-menu"></span><span class="icon-menu"></span><span class="icon-menu"></span></div>
+  <div class="CollapsiblePanelContent hide">
+    <ul class="link-ul hide">
+        <li><a href="index.html" class="link-active">HOME</a></li>
+        <li><a href="gallery.html" class="link">GALLERY</a></li>
+        <li><a href="best.html" class="link">BEST</a></li>
+        <li><a href="news.html" class="link">NEWS</a></li>
+        <li><a href="upload.html" class="link">UPLOAD</a></li>
+        <li><a href="about.html" class="link">ABOUT</a></li>
+        <li><a href="contact.html" class="link">CONTACT</a></li>
+    </ul>
+  </div>
+</div>
+    <script type="text/javascript">
+    var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("mobile-menu", {contentIsOpen:false});
+    </script>
+      </div>
+     </header>
+  <section class="content">
+     <!------------------------------------------------------content Goes Here------------------------------------------------------>
+     <div class="wapper">
+     <div id="headline">
+     <h1><span>C</span>ontact us</h1>
+     </div>
+<!-------------------Forum---------------------> 
+     <div class="forum-info">
+                   <p>Etiam interdum elementum massa amaas, sit amet pretium orci sollicitudin pellenue. Aeneanss risus neque, dignissim nec orci in. <br><br>Hendrerit tempor ligula. Suspendisse sed nisi eget sapien ltrices.</p>
+                   <ul>
+                       <li><img src="img/style/call.png" class="forum-img"></i> +94 777 10665</li>
+                       <li><img src="img/style/pin.png" alt="" class="forum-img">Akuressa Road, Katugoda, Galle, Srilanka.</li>
+                       <li><img src="img/style/email.png" class="forum-img"><a href="mailto:info@company.com">info@myselfio.com</a></li>
+                   </ul>
+               </div>    
+     <div class="wap4">
+       <form action="Database2.accdb" method="post" enctype="multipart/form-data" name="form1">
+       <div class="forum-contoler">
+         <label for="name"></label>
+         <input name="Name" type="text" class="input" id="name" placeholder="Your Full Name...">
+       </div>
+       <div class="forum-contoler">
+         <label for="email"></label>
+         <input name="E-mail" type="text" class="input" id="email" placeholder="Your E-mail..." onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue">
+       </div>
+       <div class="forum-contoler">
+         <label for="message"></label>
+         <textarea name="message" rows="10" class="input" id="message" placeholder="Your Message..."></textarea>
+       </div>
+       <div class="forum-contoler">
+         <input name="reset" type="reset" class="input-button" id="reset" value="Reset">
+         <input name="send" type="submit" class="input-button" id="send" onClick="MM_validateForm('name','','R','email','','RisEmail');return document.MM_returnValue" value="Send">
+       </div>
+       </form>
+     </div>
+     </div>
+     </section>
+<!-------------------------Footer Goes Here----------------------------------> 
+    <footer>
+     <div class="footer-bg">
+      <div class="wapper">
+       <div class="social"> 
+         <a href="#"><img src="img/style/facebook.png" class="social-box"></a>
+         <a href="#"><img src="img/style/twitter.png" class="social-box"></a>
+         <a href="#"><img src="img/style/google_plus.png" class="social-box"></a>
+         <a href="#"><img src="img/style/linkedin.png" class="social-box"></a>
+       </div>
+       <div class="footer-flot">
+        <img src="img/style/logo.png" class="footer-logo">
+        <h5 class="footer-text">Copyright © 2013  ALL rights reserved.</h5>
+       </div>
+      </div>
+     </div>
+    </footer>
+    <a href="#0" class="cd-top">Top</a>
+</body>
+</html>
